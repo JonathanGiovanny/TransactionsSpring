@@ -1,0 +1,1 @@
+ALTER TABLE tags ADD COLUMN created_date DATETIME DEFAULT now();

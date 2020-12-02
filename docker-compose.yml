@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  # web:
+  # build:.
+  # ports:
+  # - "8062"
+    localdb:
+        image: mysql:8.0
+        container_name: mysql8
+        ports:
+         - '3313:3306'
+        volumes:
+         - ./var/mysql:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: transactions_test
+            MYSQL_USER: sa
+            MYSQL_PASSWORD: sa
+        networks:
+         - ttest
+
+networks:
+    ttest:
+      driver: bridge

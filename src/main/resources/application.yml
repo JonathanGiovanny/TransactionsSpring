@@ -1,0 +1,13 @@
+server:
+    servlet:
+        context-path: /ttest
+
+spring:
+    jpa:
+        open-in-view: false
+    datasource:
+        url: jdbc:mysql://localhost:3313/transactions_test
+        username: sa
+        password: sa
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        initialization-mode: always
