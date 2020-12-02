@@ -1,0 +1,28 @@
+### Eclipse ###
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+target/
+**/target/
+**/.classpath
+**/.factorypath
+
+# STS (Spring Tool Suite)
+.springBeans
+
+.project
+
+### Eclipse Patch ###
+# Spring Boot Tooling
+.sts4-cache/
+
+out/
+modules.xml
+
+var/

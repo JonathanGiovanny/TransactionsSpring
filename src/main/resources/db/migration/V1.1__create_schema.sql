@@ -1,0 +1,10 @@
+CREATE TABLE instruments (
+	id BINARY(16) NOT NULL PRIMARY KEY,
+	name varchar(255),
+	description varchar(255)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
+
+CREATE TABLE tags (
+	id BINARY(16) NOT NULL PRIMARY KEY,
+	name varchar(255)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8MB4;
